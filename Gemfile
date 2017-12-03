@@ -19,6 +19,10 @@ gem "font-awesome-rails"
 gem "font-awesome-sass"
 gem "therubyracer", platforms: :ruby
 gem "devise"
+gem "omniauth"
+gem "omniauth-google-oauth2"
+gem "omniauth-facebook"
+gem "omniauth-twitter"
 
 group :development, :test do
   gem "byebug", platform: :mri
