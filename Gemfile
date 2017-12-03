@@ -17,6 +17,8 @@ gem "materialize-sass"
 gem "toastr_rails"
 gem "font-awesome-rails"
 gem "font-awesome-sass"
+gem "therubyracer", platforms: :ruby
+gem "devise"
 
 group :development, :test do
   gem "byebug", platform: :mri
