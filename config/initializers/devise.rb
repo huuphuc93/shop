@@ -22,5 +22,12 @@ Devise.setup do |config|
   config.maximum_attempts = 5
   config.unlock_in = 10.minutes
   config.last_attempt_warning = true
+  require 'omniauth-google-oauth2'
+  config.omniauth :google_oauth2, ENV['GOOGLE_APP_ID'], ENV['GOOGLE_APP_SECRET'], {access_type: 'online', approval_prompt: '', skip_jwt: true}
 
+  require 'omniauth-facebook'
+  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET']
+
+  require 'omniauth-twitter'
+  config.omniauth :twitter, ENV['TWITTER_API_KEY'], ENV['TWITTER_API_SECRET']
 end

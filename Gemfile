@@ -23,6 +23,7 @@ gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "omniauth-facebook"
 gem "omniauth-twitter"
+gem "figaro", "~> 1.1", ">= 1.1.1"
 
 group :development, :test do
   gem "byebug", platform: :mri
